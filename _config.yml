@@ -5,7 +5,7 @@ keywords: null
 author: dwd
 language: en
 timezone: ""
-url: "http://darkwilldie.github.io/"
+url: "http://darkwilldie.github.io"
 permalink: ":year/:month/:day/:title/"
 permalink_defaults: null
 pretty_urls:
@@ -59,7 +59,3 @@ include: null
 exclude: null
 ignore: null
 theme: icarus
-deploy:
-  type: git
-  repo: https://github.com/darkwilldie/darkwilldie.github.io
-  branch: main

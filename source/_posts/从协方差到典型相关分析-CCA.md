@@ -4,6 +4,8 @@ date: 2024-09-12 21:10:05
 tags: math
 ---
 
+<meta name="referrer" content="no-referrer" />
+
 开始看[CCA 的 wiki](https://zh.wikipedia.org/wiki/%E5%85%B8%E5%9E%8B%E7%9B%B8%E5%85%B3)的时候————这是中文吗？
 
 于是从协方差开始补（这玩意概统学了吗？没学吗？(っ °Д °;)っ果然出来混都是要还的……）。不幸的是，[协方差的 wiki](https://zh.wikipedia.org/wiki/%E5%8D%8F%E6%96%B9%E5%B7%AE)我仍然看不懂……
@@ -91,3 +93,5 @@ i.e.
 以下内容来自[典型相关分析的 wiki](https://zh.wikipedia.org/wiki/%E5%85%B8%E5%9E%8B%E7%9B%B8%E5%85%B3)，这条目里除了下面这句话我都看不懂，因此学到的主要内容还是来自[ytb](https://www.youtube.com/watch?v=2tUuyWTtPqM)。
 
 > 在统计学中，典型相关分析（英语：Canonical Correlation Analysis）是对互协方差矩阵的一种理解。如果我们有两个随机变量向量 X = (X1, ..., Xn) 和 Y = (Y1, ..., Ym) 并且它们是相关的，那么典型相关分析会找出 Xi 和 Yj 的相互相关最大的线性组合。
+
+![图片](https://gitee.com/dwd1201/image/raw/master/202409150955172.png)

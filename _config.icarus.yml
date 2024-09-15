@@ -227,7 +227,7 @@ widgets:
     # Author's current location
     location: Wuhan, China
     # URL or path to the avatar image
-    avatar: img/tokyo_tower.jpg
+    avatar: https://gitee.com/dwd1201/image/raw/master/202409151058647.jpg
     # Whether show the rounded avatar image
     avatar_rounded: false
     # Email address for the Gravatar
