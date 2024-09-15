@@ -1,7 +1,9 @@
 ---
 title: 从协方差，特征向量到典型相关分析-CCA
 date: 2024-09-12 21:10:05
-tags: math
+tags:
+  - math
+  - linear algebra
 ---
 
 <meta name="referrer" content="no-referrer" />
