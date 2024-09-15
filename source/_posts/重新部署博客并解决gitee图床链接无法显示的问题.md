@@ -9,7 +9,7 @@ tags:
 <meta name="referrer" content="no-referrer" />
 
 ~~说实话我也不知道算不算解决了，但部署上去好像能显示。~~
-![测试羽毛](https://gitee.com/dwd1201/image/raw/master/202409120811764.jpg)
+<img src="https://gitee.com/dwd1201/image/raw/master/202409120811764.jpg" height=200 width=300/>
 
 # 重新部署博客
 
