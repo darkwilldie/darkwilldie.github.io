@@ -61,5 +61,5 @@ ignore: null
 theme: icarus
 deploy:
   type: git
-  repo: git@github.com:darkwilldie/darkwilldie.github.io.git
+  repo: https://github.com/darkwilldie/darkwilldie.github.io
   branch: main
