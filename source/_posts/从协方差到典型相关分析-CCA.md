@@ -66,7 +66,7 @@ i.e.
 
 协方差的范围是 $(-\infty,\infty)$，相关性的范围是 $[-1,1]$，这两个值是正相关。
 
-相关性和协方差的关系，在我理解就是，两个标准化的随机变量之间的协方差就是相关性（i.e. 皮尔逊相关系数），因为 $r=\frac{\mathrm{Cov}(x,y)}{\mathrm{SD}(x)\cdot\mathrm{SD}(y)}$，分母中的标准差 $\mathrm{SD}(x)\cdot\mathrm{SD}(y)$ 都为 1，所以 $r=\frac{\mathrm{Cov}(x,y)}{\mathrm{SD}(x)\cdot\mathrm{SD}(y)}=\mathrm{Cov}(x,y)$。
+相关性和协方差的关系，在我理解就是，两个**标准化**的随机变量之间的协方差就是相关性（i.e. 皮尔逊相关系数），因为 $r=\frac{\mathrm{Cov}(x,y)}{\mathrm{SD}(x)\cdot\mathrm{SD}(y)}$，分母中的标准差 $\mathrm{SD}(x)\cdot\mathrm{SD}(y)=1$，所以 $r=\frac{\mathrm{Cov}(x,y)}{\mathrm{SD}(x)\cdot\mathrm{SD}(y)}=\mathrm{Cov}(x,y)$。
 
 ## 相关性矩阵
 
@@ -98,7 +98,7 @@ i.e.
 
 # 典型相关分析
 
-以下内容来自[典型相关分析的 wiki](https://zh.wikipedia.org/wiki/%E5%85%B8%E5%9E%8B%E7%9B%B8%E5%85%B3)，这条目里除了下面这句话我都看不懂，因此学到的主要内容还是来自[ytb](https://www.youtube.com/watch?v=2tUuyWTtPqM)。
+以下内容来自[典型相关分析的 wiki](https://zh.wikipedia.org/wiki/%E5%85%B8%E5%9E%8B%E7%9B%B8%E5%85%B3)，这条目里除了下面这句话我都看不懂~~（这段话其实也不是很懂）~~，因此学到的主要内容还是来自[ytb](https://www.youtube.com/watch?v=2tUuyWTtPqM)。
 
 > 在统计学中，典型相关分析（英语：Canonical Correlation Analysis）是对互协方差矩阵的一种理解。如果我们有两个随机变量向量 X = (X1, ..., Xn) 和 Y = (Y1, ..., Ym) 并且它们是相关的，那么典型相关分析会找出 Xi 和 Yj 的相互相关最大的线性组合。
 
@@ -110,7 +110,7 @@ i.e.
 
 我们把通过等式计算出的 BP 和 BS 和其他变量放在一起（即表格黄色部分），计算这两个变量之间的相关性，可以得到 $Cor(BP,BS)=0.72$ 。
 
-求出来的最大化两组变量之间的相关性的线性组合，称作**典型变量**。
+原始变量（SBP，DBP 和 Height，Weight）经过求出来的线性组合变换，得到了一个新的变量（BP，BS），新变量称作**典型变量**。
 
 <img src="https://gitee.com/dwd1201/image/raw/master/202409152009905.png"/>
 
@@ -148,7 +148,7 @@ $R_{yx}$ 仅仅是 $R_{xy}$ 的转置。
 
 <div>$$r=\sqrt{\lambda_1}=\sqrt{0.519}=0.72$$</div>
 
-特征值的平方根就是我们之前通过计算皮尔逊相关系数计算出的 $Cor(BP,BS)$。不只是 $R_x$ 矩阵的第一个特征值，同样也是 $R_y$ 的第一个特征值，等于相关性的平方 $r^2$。
+特征值的平方根就是我们之前通过计算皮尔逊相关系数计算出的 $Cor(BP,BS)$。$\lambda$ 不只是 $R_x$ 矩阵的第一个特征值，同样也是 $R_y$ 的第一个特征值，等于相关性的平方 $r^2$。
 
 ## 标准化
 
