@@ -2,6 +2,7 @@
 title: R语言使用命令行参数
 date: 2024-09-18 08:46:29
 tags: R
+categories: coding
 ---
 
 因为用同一个文件对不同数据集画图的时候，每次都改文件内容有点麻烦，而且容易忘，所以有使用命令行参数的需求。
@@ -38,20 +39,36 @@ print(args[4])
 args <- commandArgs()
 ```
 
-运行一个输出参数 0~9 的测试文件：
+实践是检验真理的唯一标准。我们先写一个输出参数 0~9 的测试文件`test.R`：
+
+```R test.R
+Args <- commandArgs()
+cat("Args[0] =", Args[0], "\n")
+cat("Args[1] =", Args[1], "\n")
+cat("Args[2] =", Args[2], "\n")
+cat("Args[3] =", Args[3], "\n")
+cat("Args[4] =", Args[4], "\n")
+cat("Args[5] =", Args[5], "\n")
+cat("Args[6] =", Args[6], "\n")
+cat("Args[7] =", Args[7], "\n")
+cat("Args[8] =", Args[8], "\n")
+cat("Args[9] =", Args[9], "\n")
+```
+
+终端运行`test.R`进行测试：
 
 ```bash
 > Rscript.exe .\beifen\R_plot\test.R a b c d
-Args[0]=
-Args[1]= D:\R-4.4.1\bin\x64\Rterm.exe
-Args[2]= --no-echo
-Args[3]= --no-restore
-Args[4]= --file=.\beifen\R_plot\test.R
-Args[5]= --args
-Args[6]= a
-Args[7]= b
-Args[8]= c
-Args[9]= d
+Args[0] =
+Args[1] = D:\R-4.4.1\bin\x64\Rterm.exe
+Args[2] = --no-echo
+Args[3] = --no-restore
+Args[4] = --file=.\beifen\R_plot\test.R
+Args[5] = --args
+Args[6] = a
+Args[7] = b
+Args[8] = c
+Args[9] = d
 ```
 
-可以看出用户输入参数是从第六个开始的。
+可见用户输入参数是从第六个开始的。

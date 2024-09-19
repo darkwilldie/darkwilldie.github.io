@@ -4,6 +4,7 @@ date: 2024-09-12 21:10:05
 tags:
   - math
   - linear algebra
+categories: math
 ---
 
 <meta name="referrer" content="no-referrer" />

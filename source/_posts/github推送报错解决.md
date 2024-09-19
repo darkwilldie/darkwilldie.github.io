@@ -6,6 +6,7 @@ tags:
   - github
   - ssh
   - Tokens
+categories: environment
 ---
 
 # 报错
