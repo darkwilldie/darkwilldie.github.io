@@ -1,5 +1,5 @@
 ---
-title: ssh和sftp配置
+title: 解决ssh22端口超时和sftp配置
 date: 2024-09-19 21:10:46
 tags:
   - ssh
@@ -7,7 +7,7 @@ tags:
 categories: environment
 ---
 
-# SSH
+# SSH 22 端口超时问题
 
 关于怎么配置 github 的 ssh 密钥，我在{% post_link github推送报错解决 %}中已经记录过，故不赘述。
 
@@ -24,7 +24,7 @@ Host github.com
 
 ## 设置别名
 
-sftp 是用来在服务器和本机之间传输文件的，只要能连上服务器，sftp 几乎不需要配置。参考[师兄的 notion](https://rylynn.notion.site/SFTP-f6d6bb9bdbeb45fab80fe1d8a53bef07)。
+sftp 是用来在服务器和本机之间传输文件的，只要能连上服务器，sftp 几乎不需要配置。参考[师兄的 notion](https://rylynn.notion.site/SFTP-f6d6bb9bdbeb45fab80fe1d8a53bef07)和[这篇教程](https://www.digitalocean.com/community/tutorials/how-to-use-sftp-to-securely-transfer-files-with-a-remote-server)
 
 首先可以在本地的`~/.ssh/config`文件中设置服务器 ip 的别名，如：
 
