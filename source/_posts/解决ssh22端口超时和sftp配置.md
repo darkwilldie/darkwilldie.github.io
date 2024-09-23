@@ -2,6 +2,7 @@
 title: 解决ssh22端口超时和sftp配置
 date: 2024-09-19 21:10:46
 tags:
+  - git
   - ssh
   - sftp
 categories: environment
