@@ -1,8 +1,8 @@
 ---
 title: 解决vscode无法使用ctrl+shift+P快捷键
 date: 2024-09-23 21:37:54
-tags:
-categories:
+tags: vscode
+categories: environment
 ---
 <meta name="referrer" content="no-referrer" />
 
