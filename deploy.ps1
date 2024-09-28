@@ -1,6 +1,4 @@
-param(
-    [string]$msg
-)
+$msg = Read-Host "Please input the commit message"
 if ([string]::IsNullOrWhiteSpace($msg)) {
     Write-Output "please input the commit message"
     exit

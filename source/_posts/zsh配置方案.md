@@ -22,6 +22,10 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 
 oh-my-zsh 的安装和配置也可以参照[github 仓库](https://github.com/ohmyzsh/ohmyzsh/tree/master)
 
+# 设置为 vscode 的默认 shell
+
+把设置中的 `terminal.integrated.defaultProfile.linux` 改为 zsh（默认为 null）。
+
 # 命令行美化
 
 ## 更改主题
