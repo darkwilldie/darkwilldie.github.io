@@ -11,7 +11,7 @@ categories: coding
 
 # 前言
 
-我是 pandas 小白，写这篇博客也是想记录一下自己学习的过程，并且整理遇到的概念，希望能打下一个良好的基础，避免学了忘，忘了学的尴尬处境。本博客参考[pandas官方文档](https://pandas.pydata.org/docs/getting_started/)
+我是 pandas 小白，写这篇博客也是想记录一下自己学习的过程，并且整理遇到的概念，希望能打下一个良好的基础，避免学了忘，忘了学的尴尬处境。本博客参考[pandas 官方文档](https://pandas.pydata.org/docs/getting_started/)
 
 pandas 的安装和导入非常简单且符合直觉。在终端中`pip install pandas`就可以完成安装，导入只需要`import pandas as pd`。
 
@@ -83,11 +83,12 @@ Name: Age, dtype: int64
 
 如下图所示，pandas 支持多种文件格式和数据源，读取使用`read_*`，写入使用`to_*`（`*`代表支持的文件格式，如 csv，html 等）
 
-比如我们读一个csv文件，并检查一下读入的数据：
+比如我们读一个 csv 文件，并检查一下读入的数据：
+
 ```py
 In [2]: titanic = pd.read_csv("data/titanic.csv")
 In [3]: titanic
-Out[3]: 
+Out[3]:
      PassengerId  Survived  Pclass  ...     Fare Cabin  Embarked
 0              1         0       3  ...   7.2500   NaN         S
 1              2         1       1  ...  71.2833   C85         C
@@ -104,12 +105,12 @@ Out[3]:
 [891 rows x 12 columns]
 ```
 
-比如从excel中读取（即`.xlsx`文件）。由于`.xlsx`文件可能包含多个表格，因此需要指定表格名字`sheet_name`。
+比如从 excel 中读取（即`.xlsx`文件）。由于`.xlsx`文件可能包含多个表格，因此需要指定表格名字`sheet_name`。
 
 ```py
 In [7]: titanic = pd.read_excel("titanic.xlsx", sheet_name="passengers")
 In [8]: titanic.head()
-Out[8]: 
+Out[8]:
    PassengerId  Survived  Pclass  ...     Fare Cabin  Embarked
 0            1         0       3  ...   7.2500   NaN         S
 1            2         1       1  ...  71.2833   C85         C
@@ -132,7 +133,7 @@ In [6]: titanic.to_excel("titanic.xlsx", sheet_name="passengers", index=False)
 
 ```py
 In [4]: titanic.head(8)
-Out[4]: 
+Out[4]:
    PassengerId  Survived  Pclass  ...     Fare Cabin  Embarked
 0            1         0       3  ...   7.2500   NaN         S
 1            2         1       1  ...  71.2833   C85         C
@@ -150,7 +151,7 @@ Out[4]:
 
 ```py
 In [5]: titanic.dtypes
-Out[5]: 
+Out[5]:
 PassengerId      int64
 Survived         int64
 Pclass           int64
@@ -173,21 +174,22 @@ In [9]: titanic.info()
 <class 'pandas.core.frame.DataFrame'>
 RangeIndex: 891 entries, 0 to 890
 Data columns (total 12 columns):
- #   Column       Non-Null Count  Dtype  
----  ------       --------------  -----  
- 0   PassengerId  891 non-null    int64  
- 1   Survived     891 non-null    int64  
- 2   Pclass       891 non-null    int64  
- 3   Name         891 non-null    object 
- 4   Sex          891 non-null    object 
+ #   Column       Non-Null Count  Dtype
+---  ------       --------------  -----
+ 0   PassengerId  891 non-null    int64
+ 1   Survived     891 non-null    int64
+ 2   Pclass       891 non-null    int64
+ 3   Name         891 non-null    object
+ 4   Sex          891 non-null    object
  5   Age          714 non-null    float64
- 6   SibSp        891 non-null    int64  
- 7   Parch        891 non-null    int64  
- 8   Ticket       891 non-null    object 
+ 6   SibSp        891 non-null    int64
+ 7   Parch        891 non-null    int64
+ 8   Ticket       891 non-null    object
  9   Fare         891 non-null    float64
- 10  Cabin        204 non-null    object 
- 11  Embarked     889 non-null    object 
+ 10  Cabin        204 non-null    object
+ 11  Embarked     889 non-null    object
 dtypes: float64(2), int64(5), object(5)
 memory usage: 83.7+ KB
 ```
+
 可以用`describe()`方法查看均值，最大值，等属性。
