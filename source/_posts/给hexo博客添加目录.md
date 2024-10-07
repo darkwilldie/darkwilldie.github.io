@@ -4,7 +4,6 @@ date: 2024-10-07 11:05:06
 tags:
 categories:
 ---
-<meta name="referrer" content="no-referrer" />
 
 参考[csdn博客](https://blog.csdn.net/qq_46527915/article/details/105466439)。
 

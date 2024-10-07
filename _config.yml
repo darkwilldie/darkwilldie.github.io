@@ -74,3 +74,6 @@ marked:
   breaks: false
   smartLists: true
   smartypants: false
+skin: custom
+css:
+  - _custom.css

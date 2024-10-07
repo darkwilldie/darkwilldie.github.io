@@ -8,8 +8,6 @@ tags:
 categories: Others
 ---
 
-<meta name="referrer" content="no-referrer" />
-
 > 由于本人也是一知半解，如有错误请不吝指正。写得比较啰嗦，请选择需要的部分看。
 
 <!-- toc -->
@@ -101,7 +99,7 @@ yarn global add minyami
 
 ## 测试网络环境（可选）
 
-> 注意：Windows 系统的 powershell 把 curl 命令作为 Invoke-WebRequest 的别名，需要另外学习 Invoke-WebRequest 的用法，或参考{%post_link 安装及学习curl%}取消别名，或尝试换个 shell。
+> 注意：Windows 系统的 powershell 把 curl 命令作为 Invoke-WebRequest 的别名，需要另外学习 Invoke-WebRequest 的用法，或参考{%post_link 安装及学习curl%}取消别名，或尝试换个 shell（试试cmd）。
 
 在需要代理的网站上，可以先测试能否用 curl 正确响应。
 
