@@ -62,10 +62,8 @@ theme: icarus
 toc:
   maxdepth: 6
   class: toc
-  slugify: transliteration
-  decodeEntities: false
   anchor:
-    position: before
+    position: after
     symbol: "#"
     style: header-anchor
 marked:

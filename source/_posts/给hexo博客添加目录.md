@@ -21,7 +21,7 @@ categories:
       symbol: "#"
       style: header-anchor
   ```
-3. 在需要展示目录前添加：
+3. 在需要展示的目录前添加：
   ```xml
   <!-- toc -->
   ```
