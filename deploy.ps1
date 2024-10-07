@@ -18,5 +18,6 @@ else {
 git add .
 git commit -m $msg
 git push origin main
+hexo generate
 hexo deploy
 Write-Output "deployed blogs successfully!"

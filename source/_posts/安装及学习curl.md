@@ -7,9 +7,11 @@ categories: curl
 
 <meta name="referrer" content="no-referrer" />
 
-Curl 是一个利用 URL 语法在命令行方式下工作的文件传输工具，支持多种协议，如 HTTP、HTTPS、FTP 等。我对 curl 的了解仅限于测试能否访问某个网站，能和 ping 一样用。但使用过程中发现还挺有用的，在 windows 安装上遇到了一些困难并解决了，所以记录一下。
+<!-- toc -->
 
 # 前置知识
+
+Curl 是一个利用 URL 语法在命令行方式下工作的文件传输工具，支持多种协议，如 HTTP、HTTPS、FTP 等。我对 curl 的了解仅限于测试能否访问某个网站，能和 ping 一样用。但使用过程中发现还挺有用的，在 windows 安装上遇到了一些困难并解决了，所以记录一下。
 
 ## ping 和 curl 的区别
 

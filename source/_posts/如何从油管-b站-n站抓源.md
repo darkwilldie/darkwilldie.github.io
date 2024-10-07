@@ -12,6 +12,10 @@ categories: Others
 
 > 由于本人也是一知半解，如有错误请不吝指正。写得比较啰嗦，请选择需要的部分看。
 
+<!-- toc -->
+
+# 前言
+
 我们抓源主要使用 yt-dlp 和 minyami 两个工具，两个工具各有用处。
 
 - yt-dlp 用来抓取油管/b 站/n 站的普通视频。
@@ -27,13 +31,17 @@ yt-dlp 部分参考[ytdlp 的 github 仓库](https://github.com/yt-dlp/yt-dlp#re
 
 以下为本人会用到的两种系统的安装方式，仅供参考。
 
-## Windows 系统
+### Windows 系统
+
+#### 安装二进制文件
+
+最简单的是直接安装仓库提供的[二进制文件](https://github.com/yt-dlp/yt-dlp#release-files)，点击下载`yt-dlp.exe`即可。
+
+#### 使用包管理器
 
 由于我使用 windows 系统且熟悉包管理工具，因此用 winget 安装。终端使用`winget install yt-dlp`即可，winget 的使用和换源参考{%post_link Windows包管理器总结%}。
 
-参照 wiki 内的其他安装方法也可以。最简单的是直接安装仓库提供的[二进制文件](https://github.com/yt-dlp/yt-dlp#release-files)，点击下载`yt-dlp.exe`即可。
-
-## Debian 系统
+### Debian 系统
 
 Linux 的基于 Debian 的系统可以用 APT 安装。
 
@@ -137,7 +145,7 @@ minyami 用来下载 nico 生放送的时光机（タイムシフト）、Abema 
 
 #### 利用插件 Minyami
 
-> 这个插件只有基于chrome内核的浏览器可以安装，如chrome和edge。
+> 这个插件只有基于 chrome 内核的浏览器可以安装，如 chrome 和 edge。
 
 还要用到一个浏览器插件 [Minyami](https://chromewebstore.google.com/detail/minyami/cgejkofhdaffiifhcohjdbbheldkiaed) 解析生放送的网址和需要的 key，并给出对应的命令。
 
@@ -155,7 +163,8 @@ minyami -d "example.com" --output <video name> --key <key>
 
 #### 运行
 
-
 当然复制的命令直接运行，多半会因为众所周知的原因超时。所以同样要设置代理，在复制的命令后加上`--proxy "http://127.0.0.1:7890"`（根据实际代理服务器可能不同）
 
-nico 生放送下载分辨率最高 720p，也就是3Mbps。
+nico 生放送下载分辨率最高 720p，也就是 3Mbps。
+
+<!---toc stop--->

@@ -59,3 +59,20 @@ include: null
 exclude: null
 ignore: null
 theme: icarus
+toc:
+  maxdepth: 6
+  class: toc
+  slugify: transliteration
+  decodeEntities: false
+  anchor:
+    position: before
+    symbol: "#"
+    style: header-anchor
+marked:
+  gfm: true
+  pedantic: false
+  sanitize: false
+  tables: true
+  breaks: false
+  smartLists: true
+  smartypants: false
