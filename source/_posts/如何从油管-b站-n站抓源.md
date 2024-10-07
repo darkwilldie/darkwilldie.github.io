@@ -23,6 +23,18 @@ yt-dlp 部分参考[ytdlp 的 github 仓库](https://github.com/yt-dlp/yt-dlp#re
 
 # 安装
 
+建议使用管理员模式打开 cmd 或 powershell。
+
+安装成功后可以用`--version`查看版本，用`--help`获取帮助页面（查阅可用选项），如：
+
+```sh
+> yt-dlp --version
+2024.09.27
+> minyami --version
+Minyami / A lovely video downloader / 5.3.1
+うめにゃん~ (虎>ω<)
+```
+
 ## yt-dlp 安装
 
 [github 仓库的 wiki](https://github.com/yt-dlp/yt-dlp/wiki/Installation)里给了详细的安装方法，建议查看。
@@ -99,7 +111,7 @@ yarn global add minyami
 
 ## 测试网络环境（可选）
 
-> 注意：Windows 系统的 powershell 把 curl 命令作为 Invoke-WebRequest 的别名，需要另外学习 Invoke-WebRequest 的用法，或参考{%post_link 安装及学习curl%}取消别名，或尝试换个 shell（试试cmd）。
+> 注意：Windows 系统的 powershell 把 curl 命令作为 Invoke-WebRequest 的别名，需要另外学习 Invoke-WebRequest 的用法，或参考{%post_link 安装及学习curl%}取消别名，或尝试换个 shell（试试 cmd）。
 
 在需要代理的网站上，可以先测试能否用 curl 正确响应。
 
@@ -131,7 +143,7 @@ yt-dlp example.com/video/id --proxy "http://127.0.0.1:7890" -f mp4 --cookies "pa
 
 ### 获取 cookies
 
-我使用浏览器插件 Get cookies.txt LOCALLY 获取，只需要登陆网站，在页面上点击插件图标保存 cookies 即可。
+我使用浏览器插件 [Get cookies.txt LOCALLY](https://chromewebstore.google.com/detail/get-cookiestxt-locally/cclelndahbckbenkjhflpdbgdldlbecc) 获取，只需要登陆网站，在页面上点击插件图标保存 cookies 即可。
 
 ## minyami 使用方法
 
