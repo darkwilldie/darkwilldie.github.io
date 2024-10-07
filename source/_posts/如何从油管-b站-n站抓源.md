@@ -10,7 +10,7 @@ categories: Others
 
 <meta name="referrer" content="no-referrer" />
 
-由于本人也是一知半解，如有错误请不吝指正。
+> 由于本人也是一知半解，如有错误请不吝指正。写得比较啰嗦，请选择需要的部分看。
 
 我们抓源主要使用 yt-dlp 和 minyami 两个工具，两个工具各有用处。
 
@@ -29,7 +29,9 @@ yt-dlp 部分参考[ytdlp 的 github 仓库](https://github.com/yt-dlp/yt-dlp#re
 
 ## Windows 系统
 
-由于我使用 windows 系统且熟悉包管理工具，因此用 winget 安装。用`winget search yt-dlp`之后，找到对应的包使用`winget install yt-dlp.yt-dlp`安装（使用 ID 指定），winget 的使用和换源参考{%post_link Windows包管理器总结%}。参照 wiki 内的其他安装方法也可以。
+由于我使用 windows 系统且熟悉包管理工具，因此用 winget 安装。终端使用`winget install yt-dlp`即可，winget 的使用和换源参考{%post_link Windows包管理器总结%}。
+
+参照 wiki 内的其他安装方法也可以。最简单的是直接安装仓库提供的[二进制文件](https://github.com/yt-dlp/yt-dlp#release-files)，点击下载`yt-dlp.exe`即可。
 
 ## Debian 系统
 
@@ -43,7 +45,13 @@ sudo apt install yt-dlp                         # Install yt-dlp
 
 ## minyami 安装
 
-`npm -g i minyami`
+[minyami 的 github 仓库](https://github.com/Last-Order/Minyami#readme)给出了通过 npm 或 yarn 的安装方式。
+
+```sh
+npm -g i minyami
+# 或
+yarn global add minyami
+```
 
 如何安装 npm（nodejs）详见{% post_link nvm-npm-nodejs%}。
 
@@ -51,11 +59,37 @@ sudo apt install yt-dlp                         # Install yt-dlp
 
 ## 设置代理
 
-设置代理需要知道代理工具的使用的协议，端口号和主机号，比如 clash 默认的端口号为 7890，v2ray 默认为 20171，两者都使用 http 协议，由于是通过本机代理，主机号为本地主机`127.0.0.1`（或者用`localhost`，二者基本等价）。
+设置代理需要知道代理工具的使用的协议，端口号和主机号。
+
+由于是通过本机代理，主机号为本地主机`127.0.0.1`（或者用`localhost`，二者基本等价）。
 
 ~~什么？为什么本机是`127.0.0.1`？你记住就行了，除非你想学计网。~~
 
+端口号和协议查看代理工具给出的信息。比如 clash 默认的端口号为 7890，v2ray 默认为 20171，两者都使用 http 协议
+
 那么假设我们使用 clash，`--proxy`的参数就应该设置为`--proxy "http://127.0.0.1:7890"`或`--proxy "http://localhost:7890"`。
+
+## 选择下载路径
+
+### 通过选项指定
+
+通过选项可以指定下载路径参数，如 `yt-dlp ... --paths "path/to/your/folder/"`
+
+使用的选项可能不同（比如 yt-dlp 是`-P/--paths`，而 minyami 是`-o/--output`）。
+
+### 进入目标目录
+
+#### 使用 cd 命令
+
+> cmd 需要先切换到对应的盘符，如`D:`，才能用 cd 进入当前盘符的路径。~~麻烦死了。~~
+
+默认下载目录是当前目录，我们可以在终端通过`cd "path/to/your/folder"`进入目标目录。
+
+#### 通过文件管理器打开
+
+也可以直接在文件管理器中输入 shell 名称（如 cmd 或 powershell），按下回车，就会自动在该目录打开 shell。
+
+<img src="https://gitee.com/dwd1201/image/raw/master/202410070934940.png"/>
 
 ## 测试网络环境（可选）
 
@@ -79,7 +113,7 @@ yt-dlp 可以用来下载油管/b 站/n 站的普通视频。
 ```sh
 # --proxy设置代理服务器
 # -f设置格式，不设置的话有时会下成.webm文件
-# --cookies用于指定cookies文件，用于b站
+# --cookies用于指定cookies文件，用于b站1080p下载
 yt-dlp example.com/video/id --proxy "http://127.0.0.1:7890" -f mp4 --cookies "path/to/your/bilibili cookies.txt"
 ```
 
@@ -101,7 +135,11 @@ minyami 用来下载 nico 生放送的时光机（タイムシフト）、Abema 
 
 ### nico 生放送下载
 
-还要用到一个浏览器插件[Minyami](https://chromewebstore.google.com/detail/minyami/cgejkofhdaffiifhcohjdbbheldkiaed)解析生放送的网址，并给出对应的命令。
+#### 利用插件 Minyami
+
+> 这个插件只有基于chrome内核的浏览器可以安装，如chrome和edge。
+
+还要用到一个浏览器插件 [Minyami](https://chromewebstore.google.com/detail/minyami/cgejkofhdaffiifhcohjdbbheldkiaed) 解析生放送的网址和需要的 key，并给出对应的命令。
 
 用法很简单，我们安装插件之后，在想要下载的 nico 生放送网站下点击，插件就会显示出命令。我们选择是否直播，然后复制命令即可。左上角的设置可以选择线程数量，可以选大点比如 16。
 
@@ -115,4 +153,9 @@ minyami 用来下载 nico 生放送的时光机（タイムシフト）、Abema 
 minyami -d "example.com" --output <video name> --key <key>
 ```
 
+#### 运行
+
+
 当然复制的命令直接运行，多半会因为众所周知的原因超时。所以同样要设置代理，在复制的命令后加上`--proxy "http://127.0.0.1:7890"`（根据实际代理服务器可能不同）
+
+nico 生放送下载分辨率最高 720p，也就是3Mbps。
