@@ -26,11 +26,11 @@ categories: environment
 
 Windows 就没必要安装 nvm 了，直接安装 nodejs 即可，npm 会自动一起安装。下面的安装方法选其一即可，不熟悉包管理器的建议选择第一种方法安装。
 
-### 使用installer或下载二进制文件
+### 使用 installer 或下载二进制文件
 
 访问官网安装指引的[installer](https://nodejs.org/en/download/prebuilt-installer)和[二进制文件](https://nodejs.org/en/download/prebuilt-binaries)，选择正确的版本（一般选择 LTS 版本）和架构安装。
 
-现在的电脑一般都是64位机，选`x64`即可，较老的机器可能必须选择32位的`x86`，而`ARM64`主要为移动设备和嵌入式系统。
+现在的电脑一般都是 64 位机，选`x64`即可，较老的机器可能必须选择 32 位的`x86`，而`ARM64`主要为移动设备和嵌入式系统。
 
 ### 使用包管理器
 
@@ -89,3 +89,44 @@ npm -v ## should print `10.8.2`
 顺利的话我们可以通过`node --version`和`npm --version`查看 nodejs 和 npm 版本。
 
 大功告成！
+
+# 换源/代理
+
+代理很简单，就`--proxy http://127.0.0.1:7890`。
+
+换源参考[博客](https://cloud.tencent.com/developer/article/2197312)。
+
+## 直接换源
+
+```sh
+# 查看源
+npm config get registry
+# 更换源
+npm config set registry https://registry.npmmirror.com/
+```
+
+## 用 nrm 管理源
+
+直接换源要记域名很麻烦，用 nrm 可以方便地更换各种国内源。
+
+```sh
+# 安装 nrm
+npm i -g nrm
+```
+
+安装 nrm 后可以通过`nrm ls`列出可选的共有源。
+
+```sh
+> nrm ls
+  npm ---------- https://registry.npmjs.org/
+  yarn --------- https://registry.yarnpkg.com/
+  tencent ------ https://mirrors.cloud.tencent.com/npm/
+  cnpm --------- https://r.cnpmjs.org/
+  taobao ------- https://registry.npmmirror.com/
+  npmMirror ---- https://skimdb.npmjs.com/registry/
+  huawei ------- https://repo.huaweicloud.com/repository/npm/
+```
+
+通过`nrm use <源的名称>`即可完成换源。
+
+
