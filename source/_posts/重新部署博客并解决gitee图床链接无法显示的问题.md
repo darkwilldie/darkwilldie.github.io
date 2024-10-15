@@ -8,7 +8,7 @@ tags:
 categories: environment
 ---
 
-<meta name="referrer" content="no-referrer" />
+<!-- toc -->
 
 ~~说实话我也不知道算不算解决了，但部署上去好像能显示。~~
 <img src="https://gitee.com/dwd1201/image/raw/master/202409120811764.jpg" height=200 width=300/>
@@ -110,3 +110,21 @@ deploy:
 但是！我这个博客之前无论是本地预览还是部署到 github pages 都无法显示 gitee 链接的图片，因此我又重新着手解决 gitee 图床链接无法显示的问题。参考了其他博客都没有解决问题，最后参考[解决 hexo 博客不能显示图床图片问题](https://cuiyuhao.com/posts/9d5b9135/)，在文章前面加上`<meta name="referrer" content="no-referrer" />`，成功解决了问题。
 
 同时头像也能正确显示了，有一说一我其实没有想通这一点，按理说文章内部加一行 html 标签应该不会影响到头像显示吧……但就是莫名其妙好了，能正常显示 gitee 图片链接了，那就算解决了吧！
+
+## 设为默认设置
+
+每次都要手动添加`<meta name="referrer" content="no-referrer" />`实在太麻烦了。如何把这段 html 代码作为 post 的默认设置呢？
+
+### 放进 post 模板
+
+`scaffolds`目录存放的是模板，要让每个 post 出场携带这段代码，我们只需要在`post.md`里追加`<meta name="referrer" content="no-referrer" />`一行即可。
+
+### 写入 config
+
+即便放进 post 模板，还是要显示在每个 post 中，要实现真正的默认设置，需要修改主题配置文件`_config.icarus.yml`的 metadata。具体修改规则参考[icarus 用户指南-主题配置](https://ppoffice.github.io/hexo-theme-icarus/Configuration/icarus%E7%94%A8%E6%88%B7%E6%8C%87%E5%8D%97-%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE/)
+
+```DTS
+head:
+  meta:
+    - 'name="referrer";content="no-referrer"'
+```

@@ -111,7 +111,7 @@ yarn global add minyami
 
 ## 测试网络环境（可选）
 
-> 注意：Windows 系统的 powershell 把 curl 命令作为 Invoke-WebRequest 的别名，需要另外学习 Invoke-WebRequest 的用法，或参考{%post_link 安装及学习curl%}取消别名，或尝试换个 shell（试试 cmd）。
+> 注意：Windows 系统的 powershell 把 curl 命令作为 Invoke-WebRequest 的别名，需要另外学习 Invoke-WebRequest 的用法，或参考{%post_link 安装及学习curl%}取消别名，或尝试换个 shell（试试 cmd/git bash）。
 
 在需要代理的网站上，可以先测试能否用 curl 正确响应。
 

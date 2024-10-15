@@ -63,3 +63,20 @@ sudo vim ~/.zshrc
 ```
 
 在 zsh 处添加 `plugins=(zsh-autosuggestions)`
+
+## 建议的插件
+
+除了命令高亮和自动补全，我还用到了`git`,`sudo`和`z`。
+
+- `git`: 默认开启，git 命令的各种别名，如`ga`->`git add`
+- `sudo`: 敲击两次`esc`相当于输入`sudo`
+- `z`: 用`cd`命令进入过的目录，可以用`z`命令省略路径，直接`z <目录名>`进入该目录
+
+启用这些插件只需要修改`~/.zshrc`：
+
+```~/.zshrc
+plugins=(git
+        z
+        sudo
+        zsh-autosuggestions)
+```

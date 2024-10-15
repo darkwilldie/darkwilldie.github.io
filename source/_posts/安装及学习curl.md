@@ -5,8 +5,6 @@ tags: curl
 categories: curl
 ---
 
-<meta name="referrer" content="no-referrer" />
-
 <!-- toc -->
 
 # 前置知识
