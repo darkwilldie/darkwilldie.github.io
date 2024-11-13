@@ -7,7 +7,7 @@ tags:
 categories: environment
 ---
 
-<meta name="referrer" content="no-referrer" />
+<!-- toc -->
 
 # conda
 
