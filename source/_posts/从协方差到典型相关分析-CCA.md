@@ -7,7 +7,7 @@ tags:
 categories: math
 ---
 
-<meta name="referrer" content="no-referrer" />
+<!-- toc -->
 
 开始看[CCA 的 wiki](https://zh.wikipedia.org/wiki/%E5%85%B8%E5%9E%8B%E7%9B%B8%E5%85%B3)的时候————这是中文吗？
 
