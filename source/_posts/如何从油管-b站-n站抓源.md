@@ -5,7 +5,7 @@ tags:
   - yt-dlp
   - minyami
   - nodejs
-categories: Others
+categories: others
 ---
 
 > 由于本人也是一知半解，如有错误请不吝指正。写得比较啰嗦，请选择需要的部分看。

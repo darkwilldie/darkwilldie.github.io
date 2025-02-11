@@ -1,8 +1,8 @@
 ---
 title: ffmpeg基础用法
 date: 2024-10-15 21:34:01
-tags:
-categories:
+tags: ffmpeg
+categories: tools
 ---
 
 <!-- toc -->

@@ -1,8 +1,8 @@
 ---
 title: MIT18.01 calculus
 date: 2024-10-28 20:12:25
-tags:
-categories:
+tags: calculus
+categories: math
 ---
 
 <!-- toc -->

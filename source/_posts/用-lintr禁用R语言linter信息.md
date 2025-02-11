@@ -3,7 +3,7 @@ title: 用.lintr禁用R语言linter信息
 date: 2024-10-04 18:32:27
 tags: 
   - R
-categories: R
+categories: environment
 ---
 <meta name="referrer" content="no-referrer" />
 

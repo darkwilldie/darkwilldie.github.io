@@ -1,8 +1,10 @@
 ---
 title: python脚本与notebook
 date: 2024-10-17 11:19:42
-tags:
-categories:
+tags: 
+  - python
+  - jupyter
+categories: coding
 ---
 
 <!-- toc -->

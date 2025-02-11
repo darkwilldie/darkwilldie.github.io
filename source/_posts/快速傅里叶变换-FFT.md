@@ -1,8 +1,8 @@
 ---
 title: 快速傅里叶变换(FFT)
 date: 2024-10-23 08:49:55
-tags:
-categories:
+tags: fft
+categories: math
 ---
 
 <!-- toc -->

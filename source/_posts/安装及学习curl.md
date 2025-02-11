@@ -2,7 +2,7 @@
 title: 安装及学习curl
 date: 2024-10-01 14:18:21
 tags: curl
-categories: curl
+categories: tools
 ---
 
 <!-- toc -->
