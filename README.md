@@ -75,38 +75,9 @@ hexo server    # 简写: hexo s
 
 确认本地预览无误后，推送到远程仓库 (GitHub/Vercel 等)：
 
-```bash
-hexo deploy
-# 简写: hexo d
-
+```powershell
+.\deploy.ps1    # 包含git commit，hexo clean 和 hexo deploy
 ```
-
-### ⚡ 推荐：发布三连招
-
-为了防止缓存导致的问题，建议养成使用组合命令的习惯：
-
-```bash
-hexo clean && hexo g && hexo d
-
-```
-
-*(解释：清除旧文件 -> 生成新文件 -> 部署上线)*
-
----
-
-## 🌐 5. 域名绑定 (CNAME)
-
-如果要绑定自定义域名（如 `www.example.com`）：
-
-1. 确保在 `source/` 目录下有一个名为 `CNAME` 的文件（无后缀）。
-2. 文件内容仅包含一行域名，例如：
-```text
-[www.example.com](https://www.example.com)
-
-```
-
-
-3. 执行部署命令，Hexo 会自动将其复制到发布目录。
 
 ---
 
