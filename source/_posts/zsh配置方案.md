@@ -75,8 +75,16 @@ sudo vim ~/.zshrc
 启用这些插件只需要修改`~/.zshrc`：
 
 ```~/.zshrc
-plugins=(git
+plugins=(
+        git
         z
         sudo
-        zsh-autosuggestions)
+        common-aliases
+        alias-finder
+        aliases
+        colored-man-pages
+        cp
+        zsh-autosuggestions
+        vscode
+)
 ```
