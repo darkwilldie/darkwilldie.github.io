@@ -113,7 +113,7 @@ navbar:
   links:
     Download on GitHub:
       icon: fab fa-github
-      url: https://github.com/ppoffice/hexo-theme-icarus
+      url: https://github.com/darkwilldie/darkwilldie.github.io
 # Page footer configurations
 footer:
   # Copyright text
@@ -128,7 +128,7 @@ footer:
       url: https://creativecommons.org/licenses/by/4.0/
     Download on GitHub:
       icon: fab fa-github
-      url: https://github.com/ppoffice/hexo-theme-icarus
+      url: https://github.com/darkwilldie/darkwilldie.github.io
 # Article related configurations
 article:
   # Code highlight settings
