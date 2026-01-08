@@ -1,5 +1,5 @@
 ---
-title: github推送报错解决
+title: github推送报错解决和SSH连接设置
 date: 2024-09-09 09:33:02
 tags:
   - git
