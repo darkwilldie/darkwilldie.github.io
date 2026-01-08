@@ -65,7 +65,6 @@ git fetch upstream
 # 3. 合并到本地主分支
 git checkout main
 git merge upstream/main
-
 ```
 
 ---
@@ -93,7 +92,6 @@ git merge upstream/main
 git checkout develop
 # --no-ff 强制生成合并节点，在历史中留下痕迹
 git merge --no-ff feature/xxx
-
 ```
 
 #### 场景 2：同步主干代码到个人分支 (使用 Rebase)
@@ -105,7 +103,6 @@ git merge --no-ff feature/xxx
 git checkout feature/xxx
 git rebase main
 # 此时你的提交会被“搬运”到 main 的最新提交之后
-
 ```
 
 ---
@@ -135,7 +132,6 @@ git reset --hard HEAD^
 
 # 或者：只撤销 Commit 动作，保留代码在暂存区（用于重新修改）
 git reset --soft HEAD^
-
 ```
 
 #### 场景 2：线上代码出 Bug (使用 Revert)
@@ -147,7 +143,6 @@ git reset --soft HEAD^
 # 生成一个新的提交，内容是删除 a1b2c3d 的修改
 git revert a1b2c3d
 git push origin main
-
 ```
 
 ---
@@ -174,7 +169,6 @@ git checkout main
 # 3. 回到原来的分支，恢复现场
 git checkout feature
 git stash pop
-
 ```
 
 #### 场景 2：同步拉取避免冲突
@@ -186,7 +180,6 @@ git stash pop
 git stash       # 暂存
 git pull        # 拉取
 git stash pop   # 还原（如有冲突需手动解决）
-
 ```
 
 ---
@@ -206,7 +199,6 @@ git stash pop   # 还原（如有冲突需手动解决）
 git checkout main
 git cherry-pick e5f6g7
 # 此时 main 分支单独应用了该 Bug 修复
-
 ```
 
 ---
@@ -233,5 +225,5 @@ git reflog
 git reset --hard 9a8b7c
 # 或者直接基于该 ID 重建分支（更安全）
 git checkout -b recover-branch 9a8b7c
-
+```
 
