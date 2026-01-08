@@ -59,21 +59,32 @@ include: null
 exclude: null
 ignore: null
 theme: icarus
+
 toc:
   maxdepth: 6
   class: toc
+  slugify: encodeURI
   anchor:
-    position: after
-    symbol: "#"
+    position: before
+    symbol: "¶ "
     style: header-anchor
-marked:
-  gfm: true
-  pedantic: false
-  sanitize: false
-  tables: true
-  breaks: false
-  smartLists: true
-  smartypants: false
+
+markdown:
+  preset: 'default'
+  render:
+    html: true
+    xhtmlOut: false
+    breaks: false
+    linkify: true
+    typographer: true
+  anchors:
+    level: 2
+    collisionSuffix: ''
+    permalink: false
+    permalinkClass: header-anchor
+    permalinkSymbol: ¶
+    permalinkBefore: false
+
 skin: custom
 css:
   - _custom.css
