@@ -105,6 +105,23 @@ git rebase main
 # 此时你的提交会被“搬运”到 main 的最新提交之后
 ```
 
+#### 场景 3：想 pick 或 drop 特定 commit
+
+用交互式rebase
+
+```bash
+git rebase -i HEAD~n 
+```
+`rebase`到想drop的提交的前一个提交，比如drop倒数第二个提交时要到倒数第三个提交，此时n=2
+
+命令输入后会弹出一个编辑窗口（比如vim），里面会显示你选择范围内的所有提交，默认是pick状态（保留）
+
+```
+pick 1a2b2d
+pick 2e3f4g
+pick 3h4i5j # 不需要该提交的代码的话就把pick改成drop!
+```
+
 ---
 
 ## 4. 撤销机制：Reset vs Revert
