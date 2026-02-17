@@ -1,7 +1,8 @@
----
+﻿---
 title: zsh配置方案
 date: 2024-09-25 21:03:57
-tags: zsh
+tags:
+  - zsh
 categories: environment
 ---
 
@@ -88,3 +89,4 @@ plugins=(
         vscode
 )
 ```
+

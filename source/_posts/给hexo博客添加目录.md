@@ -1,8 +1,9 @@
----
+﻿---
 title: 给hexo博客添加目录
 date: 2024-10-07 11:05:06
-tags: toc
-categories: environment
+tags:
+  - table-of-contents
+categories: blog
 ---
 
 参考[csdn博客](https://blog.csdn.net/qq_46527915/article/details/105466439)。

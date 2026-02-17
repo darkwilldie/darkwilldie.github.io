@@ -1,7 +1,10 @@
----
+﻿---
 title: 交叉熵、KL散度和最大似然估计
 date: 2024-12-24 10:45:01
-tags: 
+tags:
+  - cross-entropy
+  - kl-divergence
+  - maximum-likelihood
 categories: math
 ---
 <!-- toc -->
@@ -71,4 +74,5 @@ categories: math
 3. 参数估计
    - 明确的概率模型，使用最大似然估计
    - 可以结合正则化避免过拟合
+
 

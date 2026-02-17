@@ -1,7 +1,8 @@
----
+﻿---
 title: 安装及学习curl
 date: 2024-10-01 14:18:21
-tags: curl
+tags:
+  - curl
 categories: tools
 ---
 
@@ -85,3 +86,4 @@ Linux 服务器上好像不用安装就直接可以用。Windows 就很麻烦了
 3. 加上撤销 curl 别名的一行命令：`remove-item alias:curl`，保存文件。
 
 4. 用`. $profile`重新加载 profile（相当于 linux 的`source`命令）。
+

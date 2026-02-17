@@ -1,7 +1,8 @@
----
+﻿---
 title: icarus主题使用指南
 date: 2024-10-07 12:03:28
-tags: 
+tags:
+  - hexo
   - icarus
 categories: blog
 ---

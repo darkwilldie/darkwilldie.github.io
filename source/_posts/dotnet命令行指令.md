@@ -1,7 +1,9 @@
----
+﻿---
 title: dotnet命令行指令
 date: 2026-01-07 13:55:45
-tags: .net
+tags:
+  - dotnet
+  - cli
 categories: coding
 ---
 <!-- toc -->

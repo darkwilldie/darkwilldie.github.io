@@ -1,8 +1,10 @@
----
+﻿---
 title: nvm-npm-nodejs
 date: 2024-10-05 13:02:27
 tags:
   - nodejs
+  - npm
+  - nvm
 categories: environment
 ---
 
@@ -128,5 +130,6 @@ npm i -g nrm
 ```
 
 通过`nrm use <源的名称>`即可完成换源。
+
 
 

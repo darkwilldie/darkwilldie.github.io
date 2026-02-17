@@ -1,10 +1,10 @@
----
+﻿---
 title: Windows包管理器总结
 date: 2024-10-01 16:34:49
 tags:
-  - install
+  - package-manager
   - winget
-  - choco
+  - chocolatey
   - scoop
 categories: environment
 ---
@@ -108,3 +108,4 @@ winget list
 ```sh
 winget uninstall <id>
 ```
+

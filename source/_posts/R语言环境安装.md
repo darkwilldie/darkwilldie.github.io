@@ -1,8 +1,9 @@
----
+﻿---
 title: R语言环境安装
 date: 2024-09-20 09:58:14
 tags:
-  - R
+  - r
+  - installation
 categories: environment
 ---
 
@@ -91,3 +92,4 @@ BiocManager::install("EBImage")
 在我安装过程中又遇到了依赖`fftwtools`安装失败的问题，而且还不写明缺什么包！
 
 询问 AI 后得知需要`sudo apt-get install libfftw3-dev`，安装后再`install.packages("fftwtools")`，最后重新`BiocManager::install("EBImage")`，大功告成（累了已经）！
+

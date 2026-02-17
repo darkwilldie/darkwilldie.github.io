@@ -1,11 +1,11 @@
----
+﻿---
 title: 如何从油管/b站/n站抓源
 date: 2024-10-05 13:14:34
 tags:
   - yt-dlp
   - minyami
-  - nodejs
-categories: others
+  - video-download
+categories: tools
 ---
 
 > 由于本人也是一知半解，如有错误请不吝指正。写得比较啰嗦，请选择需要的部分看。
@@ -178,3 +178,4 @@ minyami -d "example.com" --output <video name> --key <key>
 nico 生放送下载分辨率最高 720p，也就是 3Mbps。
 
 <!---toc stop--->
+

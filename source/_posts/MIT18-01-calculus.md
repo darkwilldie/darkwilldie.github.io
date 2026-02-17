@@ -1,7 +1,8 @@
----
+﻿---
 title: MIT18.01 calculus
 date: 2024-10-28 20:12:25
-tags: calculus
+tags:
+  - calculus
 categories: math
 ---
 
@@ -56,3 +57,4 @@ $$
 (f(t))'=\frac{df}{dt}\cdot\frac{dt}{dx}=f'(t(x))t'(x)
 \end{align*}
 $$
+

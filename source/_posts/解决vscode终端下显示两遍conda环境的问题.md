@@ -1,9 +1,10 @@
----
+﻿---
 title: 解决vscode终端下显示两遍conda环境的问题
 date: 2024-09-20 16:07:17
 tags:
   - vscode
   - conda
+  - troubleshooting
 categories: environment
 ---
 
@@ -29,3 +30,4 @@ vscode 终端：
 在 settings.json 加一行：
 "terminal.integrated.shellIntegration.enabled": false,
 ```
+

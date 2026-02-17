@@ -1,7 +1,9 @@
----
+﻿---
 title: 快速傅里叶变换(FFT)
 date: 2024-10-23 08:49:55
-tags: fft
+tags:
+  - fft
+  - signal-processing
 categories: math
 ---
 
@@ -132,3 +134,4 @@ $$
 注意这里的 $x_k$ 指的是具体的一个 $x$ 值, 跟 $f(x)$ 中的 $a_0,a_1\dots$ 没关系.
 
 $f(x)=\{(x_0, f(x_0)),(x_1, f(x_1)),\dots(x_{n-1},f(x_{n-1}))\}$
+

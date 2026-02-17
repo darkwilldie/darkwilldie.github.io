@@ -1,9 +1,9 @@
----
+﻿---
 title: Blazor/.net Web API 学习记录
 date: 2026-01-06 16:42:38
-tags: 
- - Blazor
- - .net
+tags:
+  - blazor
+  - dotnet
 categories: coding
 ---
 <!-- toc -->

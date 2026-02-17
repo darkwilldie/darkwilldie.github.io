@@ -1,8 +1,10 @@
----
+﻿---
 title: hexo博客中文目录跳转失效的解决
 date: 2026-01-08 14:30:00
-tags: [hexo, toc, blog]
-categories: environment
+tags:
+  - hexo
+  - table-of-contents
+categories: blog
 ---
 <!-- toc -->
 
@@ -142,3 +144,4 @@ hexo server
 - **关键点**：`slugify: encodeURI`让目录链接使用URL编码，而不是简单替换为`-`
 
 这样中文目录就能正常跳转了，不用再担心中文标题的锚点问题。
+

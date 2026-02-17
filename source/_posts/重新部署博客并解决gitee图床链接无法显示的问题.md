@@ -1,11 +1,12 @@
----
+﻿---
 title: 重新部署博客并解决gitee图床链接无法显示的问题
 date: 2024-09-15 11:16:02
 tags:
-  - debug
-  - blog
-  - image
-categories: environment
+  - hexo
+  - gitee
+  - image-hosting
+  - troubleshooting
+categories: blog
 ---
 
 <!-- toc -->
@@ -128,3 +129,4 @@ head:
   meta:
     - 'name="referrer";content="no-referrer"'
 ```
+

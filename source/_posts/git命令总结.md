@@ -1,7 +1,8 @@
----
+﻿---
 title: git命令总结
 date: 2026-01-08 11:43:09
-tags: git
+tags:
+  - git
 categories: tools
 ---
 <!-- toc -->
@@ -247,4 +248,5 @@ git reset --hard 9a8b7c
 # 或者直接基于该 ID 重建分支（更安全）
 git checkout -b recover-branch 9a8b7c
 ```
+
 

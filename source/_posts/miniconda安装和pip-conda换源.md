@@ -1,9 +1,10 @@
----
+﻿---
 title: miniconda安装和pip/conda换源
 date: 2024-09-25 21:36:22
 tags:
-  - pip
   - conda
+  - pip
+  - mirror
 categories: environment
 ---
 
@@ -76,3 +77,4 @@ index-url=http://pypi.douban.com/simple
 [install]
 trusted-host=pypi.douban.com
 ```
+

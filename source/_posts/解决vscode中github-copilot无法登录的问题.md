@@ -1,9 +1,10 @@
----
+﻿---
 title: 解决vscode中github copilot无法登录的问题
 date: 2024-09-26 17:19:22
 tags:
-  - debug
-  - copilot
+  - vscode
+  - github-copilot
+  - troubleshooting
 categories: environment
 ---
 
@@ -20,3 +21,4 @@ github copilot 作为可白嫖的 GPT4（chat 是经过微调的 GPT4，补全�
 这个问题我看了 github issue，但是没有找到答案。最后的解决方式也很简单粗暴——根据报错显示的 json 路径，直接删除对应的插件目录。
 
 我删除了所有 github copilot 相关的目录，还是没管用，最后删除了`nicepkg.aide-pro-1.19`这个目录（也在报错路径中），重新安装 copilot 之后，就可以使用了。
+
