@@ -16,9 +16,9 @@ categories: blog
 
 ## 原理分析
 
-`<!-- toc -->`生成目录的机制：
+&lt;!-- toc --&gt;生成目录的机制：
 
-1. **hexo-toc插件**：扫描markdown中的`<!-- toc -->`标记，提取所有标题
+1. **hexo-toc插件**：扫描markdown中的&lt;!-- toc --&gt;标记，提取所有标题
 2. **hexo-renderer-marked**：将markdown标题转换为HTML锚点
 3. **问题根源**：`hexo-renderer-marked`默认的slugify函数不支持中文，会将所有非ASCII字符替换为`-`
 
