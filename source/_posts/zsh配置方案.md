@@ -3,15 +3,16 @@ title: zsh配置方案
 date: 2024-09-25 21:03:57
 tags:
   - zsh
+  - vim
 categories: environment
 ---
 
-<meta name="referrer" content="no-referrer" />
+<!-- toc -->
 
 之前 wsl 也是这样配置的 zsh，linux 主机其实也可以。
 参考[Windows Subsystem for Linux（WSL）的安装、美化和增强 - 知乎 (zhihu.com)](https://zhuanlan.zhihu.com/p/340851697)
 
-# 安装
+# zsh安装
 
 ```sh
 sudo apt update
@@ -90,3 +91,12 @@ plugins=(
 )
 ```
 
+# Vim配置
+
+安装指令
+```sh
+git clone --depth=1 https://github.com/amix/vimrc.git ~/.vim_runtime
+sh ~/.vim_runtime/install_awesome_vimrc.sh
+```
+
+个人追加的配置文件写在`~/vim_runtime/my_configs.vim`里，每次打开`vim`会自动读取
