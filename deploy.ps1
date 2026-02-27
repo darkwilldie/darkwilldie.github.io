@@ -18,6 +18,6 @@ else {
 git add .
 git commit -m $msg
 git push origin main
-hexo clean
-hexo deploy
+pnpm exec hexo clean
+pnpm exec hexo deploy
 Write-Output "deployed blogs successfully!"

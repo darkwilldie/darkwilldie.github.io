@@ -11,14 +11,26 @@
 - **Node.js**: [下载地址](https://nodejs.org/) (建议使用 LTS 版本)
 - **Git**: [下载地址](https://git-scm.com/)
 
-### 1.2 安装 Hexo 全局脚手架
-这是为了能使用 `hexo` 命令：
+### 1.2 启用 pnpm
 ```bash
-npm install -g hexo-cli
-
+corepack enable
+corepack prepare pnpm@10.30.3 --activate
 ```
 
-*Mac 用户如果报错权限不足，请加上 `sudo`。*
+项目已迁移到 `pnpm`，后续依赖安装和脚本执行请统一使用 `pnpm`。
+
+### 1.3 (可选) 安装 Hexo 全局脚手架
+如果你习惯直接输入 `hexo` 命令，可以全局安装 `hexo-cli`：
+```bash
+pnpm add -g hexo-cli
+# 如果提示全局命令不可用，先执行一次：
+pnpm setup
+```
+
+安装后可直接使用：
+```bash
+hexo new "文章标题"
+```
 
 ---
 
@@ -31,8 +43,7 @@ npm install -g hexo-cli
 cd your-blog-folder
 
 # 安装 package.json 中记录的所有依赖
-npm install
-
+pnpm install
 ```
 
 > **注意**：如果安装报错，可能是 Node 版本太新导致不兼容旧插件。建议使用 `nvm` 切换到 Node v14 或 v16。
@@ -44,10 +55,12 @@ npm install
 ### 新建文章
 
 ```bash
-hexo new "文章标题"
-# 简写: hexo n "文章标题"
+pnpm exec hexo new "文章标题"
+# 简写: pnpm exec hexo n "文章标题"
 
 ```
+
+如果已全局安装 `hexo-cli`，也可以直接使用 `hexo new "文章标题"`。
 
 执行后会在 `source/_posts/` 目录下生成对应的 `.md` 文件。
 
@@ -57,13 +70,13 @@ hexo new "文章标题"
 
 ```bash
 # 1. 清除缓存 (建议每次都做，防止样式不更新)
-hexo clean
+pnpm exec hexo clean
 
 # 2. 生成静态页面
-hexo generate  # 简写: hexo g
+pnpm exec hexo generate  # 简写: pnpm exec hexo g
 
 # 3. 启动本地服务器
-hexo server    # 简写: hexo s
+pnpm exec hexo server    # 简写: pnpm exec hexo s
 
 ```
 
@@ -84,8 +97,8 @@ hexo server    # 简写: hexo s
 ## ❓ 常见问题排查
 
 * **`hexo: command not found`**:
-说明全局工具丢失，请重新执行 `npm install -g hexo-cli`。
+请改用 `pnpm exec hexo` 执行命令，或先运行 `pnpm add -g hexo-cli` 并执行 `pnpm setup` 后重开终端。
 * **`Deployer not found: git`**:
-说明缺少 Git 部署插件，请执行 `npm install hexo-deployer-git --save`。
+说明缺少 Git 部署插件，请执行 `pnpm add hexo-deployer-git`。
 * **页面空白或样式错乱**:
-通常是缓存问题，请务必执行 `hexo clean` 后再重新生成。
+通常是缓存问题，请务必执行 `pnpm exec hexo clean` 后再重新生成。

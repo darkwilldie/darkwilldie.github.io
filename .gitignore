@@ -4,6 +4,7 @@ db.json
 *.log
 node_modules/
 .npm-cache/
+.pnpm-store/
 public/
 .deploy*/
 _multiconfig.yml
