@@ -8,7 +8,7 @@ categories: blog
 
 参考[csdn博客](https://blog.csdn.net/qq_46527915/article/details/105466439)。
 
-1. 安装hexo-toc：`npm install hexo-toc --save`，安装慢记得代理或换源。
+1. 安装hexo-toc：`pnpm install hexo-toc --save`，安装慢记得代理或换源。
 2. 在`_config.yml`添加：
   ```DTS
   toc:
