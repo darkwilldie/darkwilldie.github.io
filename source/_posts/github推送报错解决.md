@@ -66,7 +66,16 @@ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
 
 2. 复制 SSH 公钥到剪贴板，`cat ~/.ssh/id_ed25519.pub`，将 SSH 公钥添加到 github。
 
-3. 测试 SSH 连接：
+3. `~/.ssh/config`中添加host：
+
+```
+Host github.com
+  HostName ssh.github.com
+  User git
+  IdentityFile ~/.ssh/id_ed25519
+```
+
+4. 测试 SSH 连接：
 
 ```bash
 ssh -T git@github.com
